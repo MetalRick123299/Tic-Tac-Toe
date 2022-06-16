@@ -4,4 +4,60 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+body {
+  display: grid;
+  place-items: center;
+
+  min-height: 100vh;
+
+  text-align: center;
+}
+
+#game-container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1rem;
+}
+
+.current {
+  background-color: rgb(215, 215, 215);
+  height: 150px;
+  width: 150px;
+  border: 3px solid black;
+
+  font-size: 8rem;
+}
+
+.grid-item {
+  background-color: rgb(215, 215, 215);
+  min-height: 150px;
+  min-width: 150px;
+
+  outline: none;
+  border: none;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+
+  font-size: 8rem;
+}
+.noRight {
+  border-right: none;
+}
+.noBottom {
+  border-bottom: none;
+}
+
+.grid-item:hover {
+  background-color: rgb(155, 155, 155);
 }

@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script href="./script.js" defer></script>
+    <script src="./script.js" defer></script>
     <title>Tic Tac Toe</title>
   </head>
-  <body></body>
+  <body>
+    <div id="game-container">
+      <div class="current">X</div>
+      <div id="game-grid">
+        <button class="grid-item"></button>
+        <button class="grid-item"></button>
+        <button class="grid-item noRight"></button>
+        <button class="grid-item"></button>
+        <button class="grid-item"></button>
+        <button class="grid-item noRight"></button>
+        <button class="grid-item noBottom"></button>
+        <button class="grid-item noBottom"></button>
+        <button class="grid-item noRight noBottom"></button>
+      </div>
+      <button id="reset">Reset</button>
+    </div>
+  </body>
 </html>
