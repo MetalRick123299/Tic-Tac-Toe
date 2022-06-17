@@ -31,12 +31,17 @@ body {
 }
 
 .current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: rgb(215, 215, 215);
-  height: 150px;
-  width: 150px;
+  /* min-height: 150px; */
+  min-width: 350px;
+  padding: 1rem;
   border: 3px solid black;
 
-  font-size: 8rem;
+  font-size: 3rem;
 }
 
 .grid-item {
@@ -48,6 +53,8 @@ body {
   border: none;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
+
+  cursor: pointer;
 
   font-size: 8rem;
 }
